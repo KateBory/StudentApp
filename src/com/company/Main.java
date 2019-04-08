@@ -7,9 +7,9 @@ public class Main {
 	    Student student2 = new Student("Vasia", 5);
         Student student3 = new Student("Lilia", 7);
 
-	    System.out.println((double)(student1.getRating() + student2.getRating() + student3.getRating()) / 3);
+        Student[] students = new Student[] {student1, student2, student3};
+        System.out.println(Student.getAverageRating(students));
         student2.changeRating(10);
-        System.out.println((double)(student1.getRating() + student2.getRating() + student3.getRating()) / 3);
-
+        System.out.println(Student.getAverageRating(students));
     }
 }

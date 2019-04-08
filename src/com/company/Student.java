@@ -41,4 +41,14 @@ public class Student {
         return this.rating > s.rating;
     }
 
+    public static double getAverageRating (Student[] students) {
+        int sum = 0;
+        for (int i = 0; i < students.length; i++){
+            sum = sum + students[i].rating;
+
+           // System.out.println(students[i].toString());
+        }
+
+        return (double) sum / students.length;
+    }
 }
